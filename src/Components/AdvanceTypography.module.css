@@ -1,0 +1,23 @@
+.typoContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    font-size: 20px;
+    line-height: 1.57;
+    border-bottom: 1px solid #e8ebe8;
+    padding: 16px;
+    margin:0;
+}
+.typoContainer:hover {
+    background-color: #fff;
+}
+.value{
+    font-weight: 800;
+}
+.link{
+    color:#1890ff;
+}
+.link:hover{
+    background: none;
+    color:#1890ff;
+}

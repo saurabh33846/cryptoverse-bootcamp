@@ -1,0 +1,289 @@
+{
+    "_type": "News",
+    "readLink": "https://api.cognitive.microsoft.com/api/v7/news/search?q=Cryptocurrency",
+    "queryContext": {
+        "_type": "QueryContext",
+        "originalQuery": "Cryptocurrency",
+        "adultIntent": false
+    },
+    "totalEstimatedMatches": 16300,
+    "sort": [{
+        "_type": "SortValue",
+        "name": "Best match",
+        "id": "relevance",
+        "isSelected": true,
+        "url": "https://api.cognitive.microsoft.com/api/v7/news/search?q=Cryptocurrency"
+    }, {
+        "_type": "SortValue",
+        "name": "Most recent",
+        "id": "date",
+        "isSelected": false,
+        "url": "https://api.cognitive.microsoft.com/api/v7/news/search?q=Cryptocurrency&sortby=date"
+    }],
+    "value": [{
+        "_type": "NewsArticle",
+        "name": "Hochul administration moves to shut gas powered cryptocurrency plant",
+        "url": "https://politico.com/news/2022/06/30/hochul-administration-moves-to-shut-gas-powered-cryptocurrency-plant-00043497",
+        "imageUrl": "https://www.bing.com/th?id=OVFT._FSTxcZAAzjBlDBOwFizWC&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT._FSTxcZAAzjBlDBOwFizWC&pid=News",
+                "width": 630,
+                "height": 420
+            }
+        },
+        "description": "Kathy Hochul’s administration on Thursday denied a key permit for a gas powered cryptocurrency mining operation in the Finger Lakes, saying the facility spews too much planet-warming pollution to be allowed under the state’s climate law.",
+        "about": [{
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/07182109-18e6-0f9a-debb-c574ef9bd08e",
+            "name": "Politico"
+        }, {
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/c4583892-2ff6-fa19-9c64-626f5c8d6e36",
+            "name": "Administration"
+        }],
+        "providerName": "Politico",
+        "provider": [{
+            "_type": "Organization",
+            "name": "Politico",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.MHxqk0yjS0WJ0s_YOcKUhg&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T19:00:00.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.MHxqk0yjS0WJ0s_YOcKUhg&pid=news"
+    }, {
+        "_type": "NewsArticle",
+        "name": "Researchers Blame North Korea for $100 Million Horizon Bridge Cryptocurrency Theft Amid 'Global Manhunt'",
+        "url": "https://www.msn.com/en-us/news/technology/researchers-blame-north-korea-for-24100-million-horizon-bridge-cryptocurrency-theft-amid-global-manhunt/ar-AAZ2QUg",
+        "imageUrl": "https://www.bing.com/th?id=OVFT.BfX0DCadAfxTAi3yMpsqky&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT.BfX0DCadAfxTAi3yMpsqky&pid=News",
+                "width": 700,
+                "height": 393
+            }
+        },
+        "description": "Researchers say the recent attack on a blockchain \"bridge\" shares many of calling cards attributed to North Korea's Lazarus Group.",
+        "about": [{
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/c1af4941-1ca5-219f-9be4-a41b8ad676a3",
+            "name": "Bridge"
+        }, {
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/70c7ed0d-5dca-f7cc-34bb-5ae867fd452f",
+            "name": "Democratic People's Republic of Korea"
+        }],
+        "mentions": [{
+            "_type": "Thing",
+            "name": "Bridge"
+        }, {
+            "_type": "Thing",
+            "name": "Democratic People's Republic of Korea"
+        }, {
+            "_type": "Thing",
+            "name": "Blame"
+        }],
+        "providerName": "Gizmodo on MSN.com",
+        "provider": [{
+            "_type": "Organization",
+            "name": "Gizmodo on MSN.com",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.BmhW-V67ouY4VKCzJMDoqQ&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T17:31:18.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.BmhW-V67ouY4VKCzJMDoqQ&pid=news"
+    }, {
+        "_type": "NewsArticle",
+        "name": "North Korean hackers thought to be behind $100m cryptocurrency heist",
+        "url": "https://www.theguardian.com/world/2022/jun/30/north-korean-hackers-thought-to-be-behind-100m-cryptocurrency-heist",
+        "imageUrl": "https://www.bing.com/th?id=OVFT.UZPcYwXH49RM02PAjs1_ry&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT.UZPcYwXH49RM02PAjs1_ry&pid=News",
+                "width": 700,
+                "height": 367
+            }
+        },
+        "description": "If confirmed, last week’s attack would be the eighth this year – involving $1bn in stolen funds – that could be confidently attributed to North Korea",
+        "about": [{
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/70c7ed0d-5dca-f7cc-34bb-5ae867fd452f",
+            "name": "Democratic People's Republic of Korea"
+        }],
+        "providerName": "The Guardian",
+        "provider": [{
+            "_type": "Organization",
+            "name": "The Guardian",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.FLSSz2cn3Rqzpu_HVWuRvA&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T04:06:00.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.FLSSz2cn3Rqzpu_HVWuRvA&pid=news"
+    }, {
+        "_type": "NewsArticle",
+        "name": "North Korea may be behind new $100 million cryptocurrency hack, experts say",
+        "url": "https://www.msn.com/en-us/finance/markets/north-korea-may-be-behind-new-24100-million-cryptocurrency-hack-experts-say/ar-AAZ17My",
+        "imageUrl": "https://www.bing.com/th?id=OVFT.Hwg_GgPP_GX5a2ToX5NdxC&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT.Hwg_GgPP_GX5a2ToX5NdxC&pid=News",
+                "width": 700,
+                "height": 448
+            }
+        },
+        "description": "North Korean hackers are most likely behind an attack last week that stole as much as $100 million in cryptocurrency from a U.S. company, three digital investigative firms have concluded.",
+        "providerName": "Reuters on MSN.com",
+        "provider": [{
+            "_type": "Organization",
+            "name": "Reuters on MSN.com",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.jFXbg3L7Ce_1pS4_IOR8CA&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T03:29:18.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.jFXbg3L7Ce_1pS4_IOR8CA&pid=news"
+    }, {
+        "_type": "NewsArticle",
+        "name": "Is Bitcoin Going to Make New Lows? Let's Look at the Chart",
+        "url": "https://www.msn.com/en-us/finance/markets/is-bitcoin-going-to-make-new-lows-lets-look-at-the-chart/ar-AAZ2Fxz",
+        "imageUrl": "https://www.bing.com/th?id=OVFT.2u5rEqre4WEKLgzC3ZYzfC&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT.2u5rEqre4WEKLgzC3ZYzfC&pid=News",
+                "width": 700,
+                "height": 393
+            }
+        },
+        "description": "Bitcoin prices are again under pressure, as the cryptocurrency space faces more losses. As of midday Thursday, June 30, bitcoin is down 5% and ethereum is down almost 7%. At today’s low, bitcoin was back below $19,",
+        "about": [{
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/2d95ee9c-a8a0-d6fa-69b7-f6d996f0c946",
+            "name": "Bitcoin"
+        }],
+        "mentions": [{
+            "_type": "Thing",
+            "name": "Bitcoin"
+        }, {
+            "_type": "Thing",
+            "name": "TheStreet.com"
+        }, {
+            "_type": "Thing",
+            "name": "Amazon.com"
+        }],
+        "providerName": "TheStreet.com on MSN.com",
+        "provider": [{
+            "_type": "Organization",
+            "name": "TheStreet.com on MSN.com",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.dsVvdYEiGuqZDGlCaqu-ZQ&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T18:09:27.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.dsVvdYEiGuqZDGlCaqu-ZQ&pid=news"
+    }, {
+        "_type": "NewsArticle",
+        "name": "Cryptocurrency rules to make Europe a global leader as prices plunge",
+        "url": "https://www.business-standard.com/article/markets/cryptocurrency-rules-to-make-europe-a-global-leader-as-prices-plunge-122063001288_1.html",
+        "imageUrl": "https://www.bing.com/th?id=OVFT.zHXcBtO48RrpQobIYkaI-S&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT.zHXcBtO48RrpQobIYkaI-S&pid=News",
+                "width": 620,
+                "height": 464
+            }
+        },
+        "description": "Europe prepared to lead the world in regulating the freewheeling cryptocurrency industry at a time when prices have plunged, wiping out fortunes, fueling skepticism and sparking calls for scrutiny.",
+        "about": [{
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/501457aa-5b70-cfba-cfd8-be882b4bac1e",
+            "name": "Europe"
+        }],
+        "providerName": "Business Standard",
+        "provider": [{
+            "_type": "Organization",
+            "name": "Business Standard",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.6yYEGE61ig4jYI6NTUmjjg&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T17:30:00.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.6yYEGE61ig4jYI6NTUmjjg&pid=news"
+    }, {
+        "_type": "NewsArticle",
+        "name": "How North Korea Used Crypto to Hack Its Way Through the Pandemic",
+        "url": "https://www.nytimes.com/2022/06/30/business/north-korea-crypto-hack.html",
+        "imageUrl": "https://www.bing.com/th?id=OVFT.gx_YpwRjhEAiyjBtlC2n6S&pid=News",
+        "image": {
+            "_type": "ImageObject",
+            "thumbnail": {
+                "_type": "ImageObject",
+                "contentUrl": "https://www.bing.com/th?id=OVFT.gx_YpwRjhEAiyjBtlC2n6S&pid=News",
+                "width": 700,
+                "height": 366
+            }
+        },
+        "description": "The isolated country continues to find ways to evade sanctions and generate income while operating on the fringes of the global financial system.",
+        "about": [{
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/70c7ed0d-5dca-f7cc-34bb-5ae867fd452f",
+            "name": "Democratic People's Republic of Korea"
+        }, {
+            "_type": "Thing",
+            "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/14050494-46a6-a459-2441-66ed779329c9",
+            "name": "Hack Circle"
+        }],
+        "providerName": "New York Times",
+        "provider": [{
+            "_type": "Organization",
+            "name": "New York Times",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=ODF.GzcmUDr41J6Qc1JEQyNTCA&pid=news"
+                }
+            }
+        }],
+        "datePublished": "2022-06-30T09:00:00.0000000Z",
+        "thumbnailURL": "https://www.bing.com/th?id=ODF.GzcmUDr41J6Qc1JEQyNTCA&pid=news"
+    }]
+}
