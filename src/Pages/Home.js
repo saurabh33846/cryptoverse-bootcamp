@@ -4,12 +4,14 @@ import Coins from "../MockData/coins.json";
 import styles from "./Home.module.css"
 import News from "../MockData/TopNews.json";
 import NewsCard from "../Components/NewsCard";
+import Exchanges from '../MockData/exchanges.json';
+import ExchangeCard from "../Components/Exchanges";
 
 export default function Home() {
   const [cards, setCards] = useState(Coins.coins);
   const [news, setNews ] = useState(News.value);
-  console.log("News is ****",news)
-  console.log(Coins);
+  const [exchanges, setExchanges] = useState(Exchanges.exchanges);
+  console.log("Exchange is ****",exchanges)
   useEffect(() => {
         // fetch("https://coinranking1.p.rapidapi.com/coins?limit=10", {
     //   headers: {
@@ -64,6 +66,27 @@ export default function Home() {
             />
           })
         }
+      </div>
+
+      <div style={{padding:"8px 16px"}}>
+        <h2>Exchanges </h2>
+      </div>
+
+      <div className={styles.container}>       
+        {exchanges.map((exchange) => {
+            return (
+              <ExchangeCard
+                name={exchange.name}
+                iconUrl={exchange.iconUrl}
+                price={exchange.price}
+                numberOfMarkets={exchange.numberOfMarkets}
+                change={exchange.change}
+                key={exchange.uuid}
+                id={exchange.uuid}
+                number={exchange.rank}
+              />
+            );
+          })}
       </div>
     </div>
   );
