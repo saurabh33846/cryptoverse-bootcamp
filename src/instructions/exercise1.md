@@ -1,6 +1,6 @@
 # Exercise 1 -  Create NewsCard component
 ## Objective 
-Create a news component as same way we crearted Currency component which will show show **News Component** text on UI. 
+Create a news component as same way we crearted Currency component which will show show **News Card Component** text on UI. 
 After completing this exercise you will be able to 
 
  - Creating a static React component.
