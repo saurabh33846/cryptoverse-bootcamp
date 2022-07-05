@@ -29,10 +29,10 @@ describe("Tests for News Component", ()=>{
                 const newsComponent = wrapper.find('NewsCard');
                 expect(newsComponent.length).toBe(1);
             })
-            test("News Component should have text as 'News Component'", ()=>{
+            test("News Card Component should have text as 'News Card Component'", ()=>{
                 wrapper = mount(<App/>);
                 const newsComponent = wrapper.find('News');
-                expect(newsComponent.text()).toBe('News Component');
+                expect(newsComponent.text()).toBe('News Card Component');
             })
         })
     } else {
