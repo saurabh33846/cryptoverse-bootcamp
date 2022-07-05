@@ -21,6 +21,8 @@ After completion of this exercise you will be able to :
  - Go to file **NewsCard.module.css**, and change the font-size for class **cardFooter**  to **16px**
  - `.cardFooter{ font-size:16px; }`
 
+## input 
+![enter image description here](https://github.com/saurabh33846/cryptoverse-bootcamp/blob/part1/src/images/exercise2_input.png)
 ## Expected Output
 At the end of this exercise your output on browser should look like this 
 ![enter image description here](https://github.com/saurabh33846/cryptoverse-bootcamp/blob/part1/src/images/exercise2_output.png)
