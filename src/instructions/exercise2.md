@@ -22,10 +22,10 @@ After completion of this exercise you will be able to :
  - `.cardFooter{ font-size:16px; }`
 
 ## input 
-![enter image description here](https://github.com/saurabh33846/cryptoverse-bootcamp/blob/part1/src/images/exercise2_input.png)
+![enter image description here](https://bitbucket.mynt.myntra.com/projects/UNITY/repos/scm-bootcamp-projects/browse/src/images/exercise2_input.png?at=part1)
 ## Expected Output
 At the end of this exercise your output on browser should look like this 
-![enter image description here](https://github.com/saurabh33846/cryptoverse-bootcamp/blob/part1/src/images/exercise2_output.png)
+![enter image description here](https://bitbucket.mynt.myntra.com/projects/UNITY/repos/scm-bootcamp-projects/browse/src/images/exercise2_output.png?at=refs%2Fheads%2Fpart1)
    
 
 
