@@ -1,0 +1,76 @@
+{
+        "exchanges": [{
+            "uuid": "-zdvbieRdZ",
+            "name": "Binance",
+            "iconUrl": "https://cdn.coinranking.com/mDTK5qrmq/binance.svg",
+            "verified": false,
+            "recommended": true,
+            "numberOfMarkets": 306,
+            "coinrankingUrl": "https://coinranking.com/exchange/-zdvbieRdZ+binance",
+            "btcPrice": "0.9999836701726127",
+            "rank": 1,
+            "24hVolume": "1669235964.3830187",
+            "price": "19057.151367250113"
+        }, {
+            "uuid": "X8P0C7SXai",
+            "name": "BitMart",
+            "iconUrl": "https://cdn.coinranking.com/0KoAUbthl/bitmart.svg",
+            "verified": false,
+            "recommended": true,
+            "numberOfMarkets": 36,
+            "coinrankingUrl": "https://coinranking.com/exchange/X8P0C7SXai+bitmart",
+            "btcPrice": "0.9984318155077471",
+            "rank": 2,
+            "24hVolume": "494957944.8263923",
+            "price": "19024.209200648318"
+        }, {
+            "uuid": "_qq3t0X7Q",
+            "name": "FTX",
+            "iconUrl": "https://cdn.coinranking.com/Np95rtMR2/ftx-exchange.svg",
+            "verified": false,
+            "recommended": true,
+            "numberOfMarkets": 24,
+            "coinrankingUrl": "https://coinranking.com/exchange/_qq3t0X7Q+ftx",
+            "btcPrice": "0.9989702947730978",
+            "rank": 3,
+            "24hVolume": "478316813.1561468",
+            "price": "19037.839003502148"
+        }, {
+            "uuid": "LtNqM79f9R",
+            "name": "Changelly PRO",
+            "iconUrl": "https://cdn.coinranking.com/AvbhQzPFY/changelly-pro.png",
+            "verified": false,
+            "recommended": true,
+            "numberOfMarkets": 49,
+            "coinrankingUrl": "https://coinranking.com/exchange/LtNqM79f9R+changellypro",
+            "btcPrice": "1.0000200208042316",
+            "rank": 4,
+            "24hVolume": "385901887.62049407",
+            "price": "19057.844126536264"
+        }, {
+            "uuid": "s8lbIYDTH",
+            "name": "AAX",
+            "iconUrl": "https://cdn.coinranking.com/JBWyndh_c/853.png",
+            "verified": false,
+            "recommended": true,
+            "numberOfMarkets": 8,
+            "coinrankingUrl": "https://coinranking.com/exchange/s8lbIYDTH+aax",
+            "btcPrice": "0.9984522870138887",
+            "rank": 5,
+            "24hVolume": "380279202.68757045",
+            "price": "19031.70337723211"
+        }, {
+            "uuid": "xRvYoPjeQ",
+            "name": "Huobi Global",
+            "iconUrl": "https://cdn.coinranking.com/ryFpQe0c7/ht.svg",
+            "verified": false,
+            "recommended": true,
+            "numberOfMarkets": 200,
+            "coinrankingUrl": "https://coinranking.com/exchange/xRvYoPjeQ+huobiglobal",
+            "btcPrice": "0.9995033845739005",
+            "rank": 6,
+            "24hVolume": "214705960.0651952",
+            "price": "19044.626976119016"
+        }]
+    
+}

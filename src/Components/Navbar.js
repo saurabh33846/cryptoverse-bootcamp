@@ -14,6 +14,7 @@ export default function NavBar() {
   return (
     <div className={styles.navBar}>
       <div className={styles.navContainer}>
+        <h2 className={styles.appHeader}>Cryptobase</h2>
         <NavLink className={styles.navLink} activeClassName={styles.active} to="/">
             <Home className={styles.icon}/>
               Home
