@@ -1,5 +1,5 @@
 import "./styles.css";
-import Container from "./Exercise1/Container";
+import Container from "./Exercise2/Container";
 import SideNav from "./Components/SideNav";
 import NavBar from "./Components/Navbar";
 

@@ -1,5 +1,6 @@
 # Exercise 2 -  Props and Style addition to News Card Component
 ## Objective 
+You are given an uncomplete news-card component. You have to Complete it by following the steps given.
 There are 2 Objective you have to achieve to complete this exercise
 
  - Adding a description prop in NewsCard Component, to show the news description in NewsCard.
@@ -10,15 +11,17 @@ After completion of this exercise you will be able to :
 
 ## Steps
 
- - Go to file **Container.js** and add create a variable with value `"This is news Description";` 
-	 - `const  newsDescription = "This is news Description";`
- - Paas this variable as prop named **description** to NewsCard Component.
+ - Go to file **Exercise2/Container.js** and add create a variable with value  
+	 - `const  newsDescription = "Archit Gupta, Founder & CEO Clear says the price of Bitcoin, the first and most prominent crypto, rose to $68,000 in November 2021. Shortly after, it nearly halved in price to $35,000 and continued to decline. Today it stands at around $21,000.";`
+ - Paas this variable as prop named **description** to NewsCard Component in the following way.
 	 - `<NewsCard  heading={newsHeading}  provider={newsProvider}  description = {newsDescription}  />`
+ - Go to file **Exercise2/NewsCard.js**, and add the description to it on the description block
+	 - `<div className={styles.cardContent}> <p> {description} </p></div>`
  - Test if news Description is showing on screen.
- - Go to file **NewsCard.js**,  and apply class container to top level div.
+ - Go to file **Exercise2/NewsCard.js**,  and apply container class to top level div.
 	 - `<div classname = {styles.container}  role="button"> ....`
 	 - This should bring up the **red** border around news card.
- - Go to file **NewsCard.module.css**, and change the font-size for class **cardFooter**  to **16px**
+ - Go to file **Exercise2/NewsCard.module.css**, and change the font-size for class **cardFooter**  to **16px**
  - `.cardFooter{ font-size:16px; }`
 
 ## input 
