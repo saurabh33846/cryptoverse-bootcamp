@@ -17,7 +17,7 @@ After completing this exercise you will be able to
 ## Expected Output
 At the end of this exercise your output on browser should look like this 
 
-![Expected Output](https://github.com/saurabh33846/cryptoverse-bootcamp/blob/part1/src/images/exercise1_output.png)
+![Expected Output](https://bitbucket.mynt.myntra.com/projects/UNITY/repos/scm-bootcamp-projects/browse/src/images/exercise1_output.png?at=refs%2Fheads%2Fpart1)
    
 
 
