@@ -1,4 +1,4 @@
-# Exercise 2 -  Introduction to State and and List rendering in react
+# Exercise 3 -  Introduction to State and and List rendering in react
 ## Objective 
 Till Now we are rendering Coin Card components as a list. 
 Complete rendering of News Card Component, same way as we have rendered Coin Card.
@@ -13,13 +13,28 @@ After completion of this exercise you will be able to :
 
 ## Steps
 
- - Go to file **Exercise2/Container.js** and add create a variable with value  
-	 - `const  newsDescription = "Archit Gupta, Founder & CEO Clear says the price of Bitcoin, the first and most prominent crypto, rose to $68,000 in November 2021. Shortly after, it nearly halved in price to $35,000 and continued to decline. Today it stands at around $21,000.";`
- - Paas this variable as prop named **description** to NewsCard Component in the following way.
-	 - `<NewsCard  heading={newsHeading}  provider={newsProvider}  description = {newsDescription}  />`
- - Go to file **Exercise2/NewsCard.js**, and add the description to it on the description block
-	 - `<div className={styles.cardContent}> <p> {description} </p></div>`
- - Test if news Description is showing on screen.
+ - Go to file **App.js** and import **Exercise3/Container**
+    -`import Container from "./Exercise3/Container";` 
+
+ - Go to file **Exercise3/Container.js** you will find we have already imported **NewsCard** Component and **news**(newsData), on the top.  
+	 - `import NewsCard from "./NewsCard";`
+     - `import news from "../MockData/News.json";`
+
+ - Initialise news List in a State, as the following way.
+     - `const [newsList, setNewsList] = useState([]);`
+ - Set your news State in in **useEffect** hook
+	 - `setNewsList(news)`
+ - In the second div after heading **Top News**, loop over the **newsList** in the following way
+ `newsList.map((newsData)=>{
+                         return <NewsCard heading={newsData.name} 
+                         imageUrl ={newsData.imageUrl}
+                         description = {newsData.description}
+                         thumbnailURL = {newsData.thumbnailURL}
+                         providerName = {newsData.providerName}
+                          datePublished={newsData.datePublished} 
+                          />
+                    })
+ `
  - Go to file **Exercise2/NewsCard.js**,  and apply container class to top level div.
 	 - `<div classname = {styles.container}  role="button"> ....`
 	 - This should bring up the **red** border around news card.
