@@ -27,6 +27,7 @@ a:hover{
 }
 .navBar{
     width: 24%;
+    margin-right: 12px;
 }
 .icon {
     padding:0 16px;

@@ -1,6 +1,7 @@
 import "./styles.css";
 import Container from "./Exercise1/Container";
 import SideNav from "./Components/SideNav";
+import NavBar from "./Components/Navbar";
 
 export default function App() {
   const currencyName = "bitcoin";
@@ -8,7 +9,8 @@ export default function App() {
 
  
   return (
-    <div>
+    <div className="main">
+      <NavBar/>
       <Container/>
     </div>
   );
