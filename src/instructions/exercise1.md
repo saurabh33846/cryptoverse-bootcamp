@@ -17,7 +17,7 @@ After completing this exercise you will be able to
 ## Expected Output
 At the end of this exercise your output on browser should look like this 
 
-![Expected Output](src/images/exercise1_output.png)
+![Expected Output](../images/exercise1_output.png)
 
 
 ## Running Test cases
