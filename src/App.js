@@ -1,6 +1,5 @@
 import "./styles.css";
-import Container from "./Exercise2/Container";
-import SideNav from "./Components/SideNav";
+import Container from "./Exercise3/Container";
 import NavBar from "./Components/Navbar";
 
 export default function App() {

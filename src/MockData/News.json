@@ -1,5 +1,5 @@
-{
-    "value": [{
+
+     [{
         "_type": "NewsArticle",
         "name": "Hochul administration moves to shut gas powered cryptocurrency plant",
         "url": "https://politico.com/news/2022/06/30/hochul-administration-moves-to-shut-gas-powered-cryptocurrency-plant-00043497",
@@ -36,4 +36,3 @@
         "datePublished": "2022-06-30T03:29:18.0000000Z",
         "thumbnailURL": "https://www.bing.com/th?id=ODF.jFXbg3L7Ce_1pS4_IOR8CA&pid=news"
     }]
-}
