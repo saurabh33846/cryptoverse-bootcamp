@@ -24,7 +24,7 @@ After completion of this exercise you will be able to :
      - `const [newsList, setNewsList] = useState([]);`
  - Set your news State in in **useEffect** hook
 	 - `setNewsList(news)`
- - In the second div after heading **Top News**, loop over the **newsList** in the following way
+ - In the second div after heading **Top News**, loop over the **newsList** in the following way and return **NewsCard** Component for each item of List.
  `newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
                          imageUrl ={newsData.imageUrl}
@@ -35,17 +35,10 @@ After completion of this exercise you will be able to :
                           />
                     })
  `
- - Go to file **Exercise2/NewsCard.js**,  and apply container class to top level div.
-	 - `<div classname = {styles.container}  role="button"> ....`
-	 - This should bring up the **red** border around news card.
- - Go to file **Exercise2/NewsCard.module.css**, and change the font-size for class **cardFooter**  to **16px**
- - `.cardFooter{ font-size:16px; }`
 
-## input 
-![enter image description here](../images/exercise2_input.png)
 ## Expected Output
 At the end of this exercise your output on browser should look like this 
-![enter image description here](../images/exercise2_output.png)
+![enter image description here](../images/exercise3_output.png)
    
 
 
