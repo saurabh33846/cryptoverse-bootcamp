@@ -24,7 +24,7 @@ After completion of this exercise you will be able to :
      - `const [newsList, setNewsList] = useState([]);`
  - Set your news State in in **useEffect** hook
 	 - `setNewsList(news)`
- - In the second div after heading **Top News**, loop over the **newsList** in the following way and return **NewsCard** Component for each item of List.
+ - In the second div, loop over **newsList** in the following way and return **NewsCard** Component for each item of List.
  `newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
                          imageUrl ={newsData.imageUrl}
