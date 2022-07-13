@@ -16,7 +16,7 @@ After completion of this exercise you will be able to :
  - Go to file **App.js** and import **Exercise3/Container**
     -`import Container from "./Exercise3/Container";` 
 
- - Go to file **Exercise3/Container.js** you will find we have already imported **NewsCard** Component and **news**(newsData), on the top.  
+ - Go to file **Exercise3/Container.js**, on the top you will find commented code to import **NewsCard** Component and **news**(newsData). Uncomment that
 	 - `import NewsCard from "./NewsCard";`
      - `import news from "../MockData/News.json";`
 
@@ -24,7 +24,14 @@ After completion of this exercise you will be able to :
      - `const [newsList, setNewsList] = useState([]);`
  - Set your news State in in **useEffect** hook
 	 - `setNewsList(news)`
- - In the second div, loop over **newsList** in the following way and return **NewsCard** Component for each item of List.
+ - In the second div, you will find commented code to loop over **newsList** to render newsCard list, uncomment that code.
+     - ``newsList.map((newsData)=>{
+                         return <NewsCard heading={newsData.name} 
+                         providerName = {newsData.providerName}
+                          datePublished={newsData.datePublished} 
+                          />
+                    })`
+ - There are some props missing in **NewsCard**, add props **imageUrl** **description** **thumbnailURL** in the following way.
  `newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
                          imageUrl ={newsData.imageUrl}
