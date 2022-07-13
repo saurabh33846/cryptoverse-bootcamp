@@ -25,12 +25,12 @@ After completion of this exercise you will be able to :
  - Set your news State in in **useEffect** hook
 	 - `setNewsList(news)`
  - In the second div, you will find commented code to loop over **newsList** to render newsCard list, uncomment that code.
-     - `newsList.map((newsData)=>{
+     - ```newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
                          providerName = {newsData.providerName}
                           datePublished={newsData.datePublished} 
                           />
-                    })`
+                    })```
  - There are some props missing in **NewsCard**, add props **imageUrl** **description** **thumbnailURL** in the following way.
  `newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
