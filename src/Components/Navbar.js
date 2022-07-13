@@ -15,19 +15,19 @@ export default function NavBar() {
     <div className={styles.navBar}>
       <div className={styles.navContainer}>
         <h2 className={styles.appHeader}>Cryptobase</h2>
-        <NavLink className={styles.navLink} activeClassName={styles.active} to="/">
+        <NavLink className={styles.navLink} to="/">
             <Home className={styles.icon}/>
               Home
           </NavLink>
-        <NavLink className={styles.navLink} activeClassName={styles.active} to="/news">
+        <NavLink className={styles.navLink} to="/news">
           <News className={styles.icon}/>
            News
         </NavLink>
-        <NavLink className={styles.navLink}  activeClassName={styles.active} to="/exchanges">
+        <NavLink className={styles.navLink}  to="/exchanges">
           <Exchanges className={styles.icon}/>
           Exchanges
         </NavLink>
-        <NavLink className={styles.navLink}  activeClassName={styles.active} to="/currencies">
+        <NavLink className={styles.navLink}  to="/currencies">
           <Currency className={styles.icon} />Currencies
         </NavLink>
     </div>

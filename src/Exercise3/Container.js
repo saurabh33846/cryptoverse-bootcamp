@@ -44,19 +44,28 @@ function Container() {
             <h2 style={{"padding":"0 16px"}}>Top News </h2>
             <div className={styles.container}>
                 {
-                    /** 
-                     * Write your solution here
-                     * 
-                     */
-                     newsList.map((newsData)=>{
+                    /**
+                      newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
-                         imageUrl ={newsData.imageUrl}
+                                providerName = {newsData.providerName}
+                                datePublished={newsData.datePublished} 
+                            />
+                    })
+                     */
+                    /**
+                     *  imageUrl ={newsData.imageUrl}
                          description = {newsData.description}
                          thumbnailURL = {newsData.thumbnailURL}
-                         providerName = {newsData.providerName}
-                          datePublished={newsData.datePublished} 
-                          />
-                    })
+                     */
+                         newsList.map((newsData)=>{
+                            return <NewsCard heading={newsData.name} 
+                                   providerName = {newsData.providerName}
+                                   datePublished={newsData.datePublished} 
+                                   imageUrl ={newsData.imageUrl}
+                                    description = {newsData.description}
+                                    thumbnailURL = {newsData.thumbnailURL}
+                               />
+                       })
                  }
             </div>
         </div>

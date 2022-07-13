@@ -18,8 +18,8 @@ After completion of this exercise you will be able to :
  - Go to file **Exercise2/NewsCard.js**, and add the description to it on the description block
 	 - `<div className={styles.cardContent}> <p> {description} </p></div>`
  - Test if news Description is showing on screen.
- - Go to file **Exercise2/NewsCard.js**,  and apply container class to top level div.
-	 - `<div classname = {styles.container}  role="button"> ....`
+ - Go to file **Exercise2/NewsCard.js**,  and apply newsContainer class to top level div.
+	 - `<div classname = {styles.newsContainer}  role="button"> ....`
 	 - This should bring up the **red** border around news card.
  - Go to file **Exercise2/NewsCard.module.css**, and change the font-size for class **cardFooter**  to **16px**
  - `.cardFooter{ font-size:16px; }`
