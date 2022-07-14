@@ -16,7 +16,7 @@ function Container(){
         <div id="exercise2">
             <Card name={coinName} price={price}/>
             <hr></hr>
-            <NewsCard heading={newsHeading} provider={newsProvider} />
+            <NewsCard heading={newsHeading} provider={newsProvider} description={newsDescription} />
         </div>
     )
 }

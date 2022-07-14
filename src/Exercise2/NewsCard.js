@@ -4,7 +4,7 @@ import styles from "./NewsCard.module.css";
 function NewsCard(props) {
     const { heading,provider,description} = props;
   return (
-    <div role="button"> 
+    <div className={styles.newsContainer} role="button"> 
       <div className={styles.cardHeader}>
           <h3>{heading}</h3>
       </div>
@@ -14,6 +14,7 @@ function NewsCard(props) {
                 /***
                  * Write Description prop here
                  */
+                description
             }
         </p>
       </div>

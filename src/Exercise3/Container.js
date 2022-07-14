@@ -7,23 +7,19 @@ import styles from './container.module.css'
  * Uncomment below lines to import news and newscard component.
  */
 
-// import NewsCard from "./NewsCard";
-// import news from "../MockData/News.json";
+import NewsCard from "./NewsCard";
+import news from "../MockData/News.json";
 
 
 function Container() {
     const [coins, setCoins] = useState([]);
-    const [newsList, setNewsList] = useState([]);
-
     /** Initialise your news State here */
-    useEffect(()=>{
-        setCoins(mockCoins.coins);
-       /** Set your news state here */
-       setNewsList(news)
-    }, [])
-
+    const [newsList, setNewsList] = useState([]);
     return (
         <div style={{"marginLeft":"60px"}} >
+            <button onClick={()=>{
+                 setCoins(mockCoins.coins);
+            }}>Show Card</button>
             <div className={styles.container}>
                 {
                     coins.map((coinData)=>{
@@ -42,16 +38,19 @@ function Container() {
             </div>
             
             <h2 style={{"padding":"0 16px"}}>Top News </h2>
+
+            <button onClick={()=>{
+                // Set your News List here.
+                setNewsList(news)
+            }}>Show News
+            </button>
             <div className={styles.container}>
                 {
-                    // Uncomment this line to render newsCard component
+                    // Uncomment this line to render List of  newsCard component
                     
                     /**
                       newsList.map((newsData)=>{
-                         return <NewsCard heading={newsData.name} 
-                                providerName = {newsData.providerName}
-                                datePublished={newsData.datePublished} 
-                            />
+                         return <NewsCard />
                     })
                      */
 
@@ -59,8 +58,11 @@ function Container() {
 
                     /**
                      *  imageUrl ={newsData.imageUrl}
-                         description = {newsData.description}
-                         thumbnailURL = {newsData.thumbnailURL}
+                        description = {newsData.description}
+                        thumbnailURL = {newsData.thumbnailURL}
+                        heading={newsData.name} 
+                        providerName = {newsData.providerName}
+                        datePublished={newsData.datePublished} 
                      */
                     
                  }
