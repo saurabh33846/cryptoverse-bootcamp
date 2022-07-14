@@ -17,8 +17,7 @@ After completion of this exercise you will be able to :
     -`import Container from "./Exercise3/Container";` 
 
  - Go to file **Exercise3/Container.js**, on the top you will find commented code to import **NewsCard** Component and **news* (newsData). Uncomment that.
-	- ```import NewsCard from "./NewsCard";
-     import news from "../MockData/News.json";```
+	- ```import NewsCard from "./NewsCard"; import news from "../MockData/News.json";```
 
  - Initialise news List in a State, as the following way.
      - `const [newsList, setNewsList] = useState([]);`
