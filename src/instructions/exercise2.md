@@ -12,7 +12,7 @@ After completion of this exercise you will be able to :
 ## Steps
 
  - Go to file **Exercise2/Container.js** and add create a variable with value  
-	 - `const  newsDescription = "Archit Gupta, Founder & CEO Clear says the price of Bitcoin, the first and most prominent crypto, rose to $68,000 in November 2021. Shortly after, it nearly halved in price to $35,000 and continued to decline. Today it stands at around $21,000.";`
+	 - ```const  newsDescription = "Archit Gupta, Founder & CEO Clear says the price of Bitcoin, the first and most prominent crypto, rose to $68,000 in November 2021. Shortly after, it nearly halved in price to $35,000 and continued to decline. Today it stands at around $21,000.";```
  - Paas this variable as prop named **description** to NewsCard Component in the following way.
 	 - `<NewsCard  heading={newsHeading}  provider={newsProvider}  description = {newsDescription}  />`
  - Go to file **Exercise2/NewsCard.js**, and add the description to it on the description block

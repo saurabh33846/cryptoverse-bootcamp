@@ -17,8 +17,8 @@ After completion of this exercise you will be able to :
     -`import Container from "./Exercise3/Container";` 
 
  - Go to file **Exercise3/Container.js**, on the top you will find commented code to import **NewsCard** Component and **news**(newsData). Uncomment that
-	 - `import NewsCard from "./NewsCard";`
-     - `import news from "../MockData/News.json";`
+	 - ```import NewsCard from "./NewsCard";
+     import news from "../MockData/News.json";```
 
  - Initialise news List in a State, as the following way.
      - `const [newsList, setNewsList] = useState([]);`
@@ -32,7 +32,7 @@ After completion of this exercise you will be able to :
                           />
                     })```
  - There are some props missing in **NewsCard**, add props **imageUrl** **description** **thumbnailURL** in the following way.
- `newsList.map((newsData)=>{
+ ```newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
                          imageUrl ={newsData.imageUrl}
                          description = {newsData.description}
@@ -40,8 +40,7 @@ After completion of this exercise you will be able to :
                          providerName = {newsData.providerName}
                           datePublished={newsData.datePublished} 
                           />
-                    })
- `
+                    })```
 
 ## Expected Output
 At the end of this exercise your output on browser should look like this 

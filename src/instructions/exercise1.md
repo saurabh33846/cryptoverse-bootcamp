@@ -1,4 +1,12 @@
 # Exercise 1 -  Create NewsCard component
+
+## Before you start 
+Run the following command in the root folder of your application
+- `rm -rf node_modules`
+- `rm -rf package-lock.json`
+- `npm i`
+
+Start your exercise once all these Commands are successful.
 ## Objective 
 Create a news component as same way we crearted Currency component which will show show **News Card Component** text on UI. 
 After completing this exercise you will be able to 
