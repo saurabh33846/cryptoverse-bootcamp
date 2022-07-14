@@ -34,4 +34,4 @@ At the end of this exercise your output on browser should look like this
 
 ## Running Test cases
 
-To verify your output run the following command in the root folder of your directory `npm run test`
+To verify your output run the following command in the root folder of your directory `npm run verify-2`

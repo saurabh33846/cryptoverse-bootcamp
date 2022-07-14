@@ -32,7 +32,7 @@ After completion of this exercise you will be able to :
                           />
                     })```
  - There are some props missing in **NewsCard**, add props **imageUrl** **description** **thumbnailURL** in the following way.
- ```newsList.map((newsData)=>{
+ - ```newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
                          imageUrl ={newsData.imageUrl}
                          description = {newsData.description}
@@ -50,4 +50,4 @@ At the end of this exercise your output on browser should look like this
 
 ## Running Test cases
 
-To verify your output run the following command in the root folder of your directory `npm run test`
+To verify your output run the following command in the root folder of your directory `npm run verify-3`
