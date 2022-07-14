@@ -4,14 +4,16 @@ import styles from "./NewsCard.module.css";
 function NewsCard(props) {
     const { heading,provider,description} = props;
   return (
-    <div className={styles.newsContainer} role="button"> 
+    <div role="button"> 
       <div className={styles.cardHeader}>
           <h3>{heading}</h3>
       </div>
       <div className={styles.cardContent}> 
         <p>
             {
-                description
+                /***
+                 * Write Description prop here
+                 */
             }
         </p>
       </div>

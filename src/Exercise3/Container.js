@@ -4,11 +4,11 @@ import Card from './Card';
 import styles from './container.module.css'
 
 /**
- * News Component and data are already imported.
+ * Uncomment below lines to import news and newscard component.
  */
 
-import NewsCard from "./NewsCard";
-import news from "../MockData/News.json";
+// import NewsCard from "./NewsCard";
+// import news from "../MockData/News.json";
 
 
 function Container() {
@@ -44,6 +44,8 @@ function Container() {
             <h2 style={{"padding":"0 16px"}}>Top News </h2>
             <div className={styles.container}>
                 {
+                    // Uncomment this line to render newsCard component
+                    
                     /**
                       newsList.map((newsData)=>{
                          return <NewsCard heading={newsData.name} 
@@ -52,20 +54,15 @@ function Container() {
                             />
                     })
                      */
+
+                    // Paas the following props to newsCard component to complete this exercise.
+
                     /**
                      *  imageUrl ={newsData.imageUrl}
                          description = {newsData.description}
                          thumbnailURL = {newsData.thumbnailURL}
                      */
-                         newsList.map((newsData)=>{
-                            return <NewsCard heading={newsData.name} 
-                                   providerName = {newsData.providerName}
-                                   datePublished={newsData.datePublished} 
-                                   imageUrl ={newsData.imageUrl}
-                                    description = {newsData.description}
-                                    thumbnailURL = {newsData.thumbnailURL}
-                               />
-                       })
+                    
                  }
             </div>
         </div>
