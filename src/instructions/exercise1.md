@@ -15,7 +15,8 @@ After completing this exercise you will be able to
  - Importing component and use it anywhere.
 
 ## Steps
-
+ - Go to file **App.js** and import **Exercise1/Container**
+    -`import Container from "./Exercise1/Container";` 
  - Create a new file named **NewsCard.js** in the folder **Exercise1**
  - In that file, write the component code same way as we have written for file **Card.js** and replace the text **Card Component** with **'News Card Component'**.
  - Import the file **NewsCard.js** into file **Container.js.**
