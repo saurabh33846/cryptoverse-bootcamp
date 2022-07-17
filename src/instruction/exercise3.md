@@ -14,6 +14,9 @@
 	   3.  News Description
 	   4.  Source
 	   5.  Time
+       
+       
+       
 
 -   npm start
 Runs the app in the development mode.
