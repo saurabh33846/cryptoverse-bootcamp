@@ -21,7 +21,7 @@ After completion of this exercise you will be able to :
 
  - Initialise news List in a State, as the following way.
      - `const [newsList, setNewsList] = useState([]);`
- - Set your news State in in **useEffect** hook
+ - Attach a onClick listner on **Show News** button, and set the news state on click of Show News Button
 	 - `setNewsList(news)`
  - In the second div, you will find commented code to loop over **newsList** to render newsCard list, uncomment that code.
      - ```newsList.map((newsData)=>{
