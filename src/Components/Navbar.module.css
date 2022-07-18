@@ -31,3 +31,9 @@ a:hover{
 .icon {
     padding:0 16px;
 }
+.header {
+    color:#fff;
+    font-size:32px;
+    font-weight: 600;
+    padding: 0 16px;
+}
