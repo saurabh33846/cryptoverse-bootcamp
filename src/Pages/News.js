@@ -2,29 +2,20 @@ import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css"
 import News from "../MockData/News.json";
 import NewsCard from "../Components/NewsCard";
+import { fetchNews } from "../Services/fetchNews";
 
 export default function Home() {
   const [news, setNews ] = useState(News.value);
   const [isLoading, setIsLoading] = useState(false);
-  console.log("News is ****",news)
+
   useEffect(() => {
-    async function fetchData(){
-        setIsLoading(true);
-        const response = await fetch("https://bing-news-search1.p.rapidapi.com/news/search?q=Cryptocurrency&safeSearch=Off&textFormat=Raw&freshness=Day&count=12", {
-          headers: {
-            "X-RapidAPI-Key": "f0021db587msh781fb1cbef39856p11c183jsn45521d5d1c85",
-            "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com"
-          }
-        })
-        if(response.ok) {
-          const jsonResp = await response.json()
-          console.log("@@@@@@ Json Response api", jsonResp);
-          setIsLoading(false)
-          setNews(jsonResp.value)
-        }
-      }
-      fetchData();
+    getNewsData()
   }, []);
+
+  const getNewsData = async () => {
+    let newsData = await fetchNews();
+    // setNews(newsData)
+  }
   return (
       <div>
           {

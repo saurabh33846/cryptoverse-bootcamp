@@ -3,6 +3,7 @@ import { Switch, Routes, Route, Link } from "react-router-dom";
 import NavBar from "./Navbar";
 import Home from "../Pages/Home";
 import News from "../Pages/News";
+import Exchange from "../Pages/Exchanges"
 import Details from "../Pages/Details";
 import styles from './SideNav.module.css'
 export default function SideNav() {
@@ -23,7 +24,7 @@ export default function SideNav() {
           <Route
             exact
             path="/exchanges"
-            element={<div>Exchanges </div>}
+            element={<div><Exchange/> </div>}
           ></Route>
           <Route
             exact
