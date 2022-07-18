@@ -7,14 +7,13 @@ import styles from './container.module.css'
  * Uncomment below lines to import news and newscard component.
  */
 
-import NewsCard from "./NewsCard";
-import news from "../MockData/News.json";
+// import NewsCard from "./NewsCard";
+// import news from "../MockData/News.json";
 
 
 function Container() {
     const [coins, setCoins] = useState([]);
     /** Initialise your news State here */
-    const [newsList, setNewsList] = useState([]);
     return (
         <div style={{"marginLeft":"60px"}} >
             <button className={styles.button} onClick={()=>{
