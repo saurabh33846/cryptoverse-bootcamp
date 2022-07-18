@@ -7,10 +7,8 @@ import { BrowserRouter } from "react-router-dom";
 export default function App() { 
   return (
     <div className="main">
-      <BrowserRouter>
         <NavBar/>
         <Container/>
-      </BrowserRouter>
     </div>
   );
 }
