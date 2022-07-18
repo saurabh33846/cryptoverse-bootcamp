@@ -4,20 +4,24 @@ import Coins from "../MockData/coins.json";
 import styles from "./Home.module.css"
 import News from "../MockData/TopNews.json";
 import NewsCard from "../Components/NewsCard";
+
 import Exchanges from '../MockData/exchanges.json';
 import ExchangeCard from "../Components/Exchanges";
+// Service import
 import { fetchCoins } from "../Services/fetchCoins";
 import { fetchNews } from "../Services/fetchNews";
 
 export default function Home() {
   const [cards, setCards] = useState([]);
   const [cardsLoading, setCardsLoading] = useState(false);
+
   const [news, setNews] = useState([]);
+  const [newsLoading, setNewsLoading] = useState(false);
   const [exchanges, setExchanges] = useState(Exchanges.exchanges);
 
   useEffect(() => {
     getCoinsData();
-
+    getNewsData();
   }, []);
 
   const getCoinsData = async () => {
@@ -33,6 +37,14 @@ export default function Home() {
   }
   const getNewsData = async()=>{
     //Write your logic here
+    try {
+      setNewsLoading(true)
+      let newsData = await fetchNews();
+      setNews(newsData.value)
+      setNewsLoading(false)
+    }catch(err) {
+      setNewsLoading(false)
+    }
   }
 
   return (
@@ -64,23 +76,27 @@ export default function Home() {
         <h2>Top News </h2>
       </div>
 
-      <div className={styles.container}>
-        {
-          news.map((oneNews) => {
-            const { name, description, datePublished } = oneNews;
-            const imageUrl = oneNews?.image?.thumbnail?.contentUrl;
-            const thumbNailURL = oneNews?.provider[0]?.image?.thumbnail?.contentUrl;
-            const providerName = oneNews?.provider[0]?.name;
-            return <NewsCard heading={name}
-              imageUrl={imageUrl}
-              description={description}
-              thumbNailURL={thumbNailURL}
-              providerName={providerName}
-              datePublished={datePublished}
-            />
-          })
-        }
+      {
+        newsLoading ? <p className={styles.p}>Loading News...</p> :       
+        <div className={styles.container}>
+          {
+            news.map((oneNews) => {
+              const { name, description, datePublished } = oneNews;
+              const imageUrl = oneNews?.image?.thumbnail?.contentUrl;
+              const thumbNailURL = oneNews?.provider[0]?.image?.thumbnail?.contentUrl;
+              const providerName = oneNews?.provider[0]?.name;
+              return <NewsCard heading={name}
+                imageUrl={imageUrl}
+                description={description}
+                thumbNailURL={thumbNailURL}
+                providerName={providerName}
+                datePublished={datePublished}
+              />
+            })
+          }
       </div>
+      }
+
 
       <div style={{ padding: "8px 16px",  width:"100%"  }}>
         <h2>Exchanges </h2>

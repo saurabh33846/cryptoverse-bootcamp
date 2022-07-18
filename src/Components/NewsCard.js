@@ -17,7 +17,7 @@ function NewsCard(props) {
         </div>
       </div>
       <div className={styles.cardContent}>
-        <p>{description.length > 100 ? `${description.substring(0, 100)}...` : description}</p>
+        <p>{description && description.length > 100 ? `${description.substring(0, 100)}...` : description}</p>
       </div>
       <div className={styles.cardFooter}>
         <div className={styles.cardFooter}>
