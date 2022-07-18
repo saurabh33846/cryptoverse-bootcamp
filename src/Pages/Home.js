@@ -10,9 +10,9 @@ import { fetchCoins } from "../Services/fetchCoins";
 import { fetchNews } from "../Services/fetchNews";
 
 export default function Home() {
-  const [cards, setCards] = useState(Coins.coins);
-  const [news, setNews] = useState(News.value);
-  const [exchanges, setExchanges] = useState(Exchanges.exchanges);
+  const [cards, setCards] = useState([]);
+  const [news, setNews] = useState([]);
+  const [exchanges, setExchanges] = useState([]);
 
   useEffect(() => {
     getCoinsAndNewsData()
@@ -20,9 +20,9 @@ export default function Home() {
     , []);
 
   const getCoinsAndNewsData = async () => {
-    // let coinsData = await fetchCoins();
+    let coinsData = await fetchCoins();
     // let newsData = await fetchNews();
-    // setCards(coinsData.data.coins)
+    setCards(coinsData.data.coins)
   }
 
   return (
