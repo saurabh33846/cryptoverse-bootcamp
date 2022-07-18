@@ -11,40 +11,56 @@ import { fetchNews } from "../Services/fetchNews";
 
 export default function Home() {
   const [cards, setCards] = useState([]);
+  const [cardsLoading, setCardsLoading] = useState(false);
   const [news, setNews] = useState([]);
-  const [exchanges, setExchanges] = useState([]);
+  const [exchanges, setExchanges] = useState(Exchanges.exchanges);
 
   useEffect(() => {
-    getCoinsAndNewsData()
-  }
-    , []);
+    getCoinsData();
 
-  const getCoinsAndNewsData = async () => {
-    let coinsData = await fetchCoins();
-    // let newsData = await fetchNews();
-    setCards(coinsData.data.coins)
+  }, []);
+
+  const getCoinsData = async () => {
+    try{
+      setCardsLoading(true);
+      let coinsData = await fetchCoins();
+      setCards(coinsData.data.coins)
+      setCardsLoading(false);
+    } catch(err) {
+      setCardsLoading(false);
+    }
+    
+  }
+  const getNewsData = async()=>{
+    //Write your logic here
   }
 
   return (
+    
     <div className={styles.container} >
-      <div className={styles.container}>
-        {cards.map((coin) => {
-          return (
-            <Card
-              name={coin.name}
-              iconUrl={coin.iconUrl}
-              price={coin.price}
-              marketCap={coin.marketCap}
-              change={coin.change}
-              key={coin.uuid}
-              id={coin.uuid}
-              number={coin.rank}
-            />
-          );
-        })}{" "}
+      <div style={{ padding: "8px 16px", width:"100%" }}>
+        <h2>Coins </h2>
       </div>
-
-      <div style={{ padding: "8px 16px" }}>
+      {
+        cardsLoading ? <p className={styles.p} >Loading Cards...</p> : 
+        <div className={styles.container}>
+          {cards.map((coin) => {
+            return (
+              <Card
+                name={coin.name}
+                iconUrl={coin.iconUrl}
+                price={coin.price}
+                marketCap={coin.marketCap}
+                change={coin.change}
+                key={coin.uuid}
+                id={coin.uuid}
+                number={coin.rank}
+              />
+            );
+          })}{" "}
+        </div>
+      }
+      <div style={{ padding: "8px 16px", width:"100%" }}>
         <h2>Top News </h2>
       </div>
 
@@ -66,7 +82,7 @@ export default function Home() {
         }
       </div>
 
-      <div style={{ padding: "8px 16px" }}>
+      <div style={{ padding: "8px 16px",  width:"100%"  }}>
         <h2>Exchanges </h2>
       </div>
 
