@@ -4,3 +4,6 @@
 ## Demo of the application 
 https://cryptoverse-bootcamp-ku0uu90ej-saurabh33846.vercel.app/
 
+## For checkout to part1 of exercise
+`git checkout part1`
+
